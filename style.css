@@ -19,24 +19,29 @@
 }
 
 body {
+    color: white;
     font-size: 15px;
     background-color: hsl(233, 47%, 7%);
 }
 
 .main-container {
     background-color: hsl(244, 38%, 16%);
+    background-size: cover;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: row;
+    width: 960px;
+    height: fit-content;
     border-radius: 10px;
+    display: flex;
 }
 
 .main-text {
     width: 50%;
     padding: 50px;
+    text-align: left;
+    margin: auto;
 }
 
 h1 {
@@ -54,21 +59,26 @@ p {
     color: hsla(0, 0%, 100%, 0.75);
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
 
 ul {
     display: flex;
     position: relative;
-    left: -25px;
+    left: -20px;
     text-align: center;
 }
 
 il {
     padding: 20px 20px 0px 20px;
     color: hsla(0, 0%, 100%, 0.6) ;
+    display: flex;
+    flex-direction: column;
     text-align: left;
     text-transform: uppercase;
+    font-size: 10px;
+    line-height: 1.7;
+    font-family: "Lexend Deca", sans-serif;
 }
 
 il span {
@@ -76,6 +86,7 @@ il span {
     text-transform: lowercase;
     font-family: "Inter", sans-serif;
     font-weight: 700;
+    font-size: 20px;
 }
 
 .m {
@@ -83,18 +94,36 @@ il span {
 }
 
 .main-img {
-    background-color: hsl(277, 64%, 61%);
+    background-image: hsl(277, 64%, 61%);
     width: 50%;
     height: 396.4px;
     box-sizing: border-box;
-}
-
-.img-top {
-    background-color: hsl(277, 64%, 61%);
+    resize: none;
 }
 
 img {
     width: 100%;
     height: 100%;
     border-radius: 0px 10px 10px 0px;
+    resize: none;
+}
+
+.img-top {
+    width: 50%;
+    height: 100%;
+    background: hsla(277, 64%, 61%, 0.562);
+    border-radius: 0px 10px 10px 0px;
+    resize: none;
+    position: fixed;
+}
+
+.attribution {
+    margin: 95vh 0 0 0;
+}
+
+@media only screen and (max-width: 375px) {
+    .main-container {
+        background-size: cover;
+        margin: auto
+    }
 }
