@@ -124,6 +124,71 @@ img {
 @media only screen and (max-width: 375px) {
     .main-container {
         background-size: cover;
-        margin: auto
+        width: 330px;
+        height: 730px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main-text {
+        height: 50%;
+        width: 100%;
+        text-align: center;
+        margin: 50px 50px 50px 0px;
+        position: absolute;
+        top: 180px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    p {
+        line-height: 1.7;
+        padding-bottom: 10px;
+        font-size: 13px;
+    }
+
+    ul {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        left: 0px;
+        text-align: center;
+    }
+
+    il {
+        text-align: center;
+    }
+
+    .main-img {
+        background-image: hsl(277, 64%, 61%);
+        width: 100%;
+        height: 450px;
+        box-sizing: border-box;
+        resize: none;
+        padding-top: 100px;
+        position: absolute;
+        top: -99px;
+    }
+
+    img {
+        width: 100%;
+        height: 30%;
+        border-radius: 10px 10px 0px 0px;
+        resize: none;
+    }
+
+    .img-top {
+        width: 100%;
+        height: 33.1%;
+        background: hsla(277, 64%, 61%, 0.562);
+        border-radius: 10px 10px 0px 0px;
+        resize: none;
+        position: fixed;
+    }
+
+    .attribution {
+        margin: 95vh 0 0 0;
     }
 }
